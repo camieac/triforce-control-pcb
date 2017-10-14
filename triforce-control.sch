@@ -1,0 +1,758 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:nxp
+LIBS:rfcom
+LIBS:ESP8266
+LIBS:mbed
+LIBS:bosch
+LIBS:esp8266
+LIBS:bno055
+LIBS:connectors
+LIBS:triforce-control-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Fight Controller"
+Date "07 October 2017"
+Rev "A"
+Comp "Triforce"
+Comment1 "Author: Cameron A. Craig"
+Comment2 "Copyright Cameron A. Craig 2017"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LPC1768 U3
+U 1 1 59D8AFFE
+P 8400 4950
+F 0 "U3" H 9000 4850 60  0000 C CNN
+F 1 "LPC1768" H 9000 7150 60  0000 C CNN
+F 2 "mbed:lpc1768" H 8400 4950 60  0001 C CNN
+F 3 "" H 8400 4950 60  0001 C CNN
+	1    8400 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 59D8CC20
+P 7850 2500
+F 0 "#PWR01" H 7850 2350 50  0001 C CNN
+F 1 "+5V" H 7850 2640 50  0000 C CNN
+F 2 "" H 7850 2500 50  0001 C CNN
+F 3 "" H 7850 2500 50  0001 C CNN
+	1    7850 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 59D8CC3A
+P 8050 2500
+F 0 "#PWR02" H 8050 2250 50  0001 C CNN
+F 1 "GND" H 8050 2350 50  0000 C CNN
+F 2 "" H 8050 2500 50  0001 C CNN
+F 3 "" H 8050 2500 50  0001 C CNN
+	1    8050 2500
+	-1   0    0    1   
+$EndComp
+Text GLabel 9900 4850 2    40   Input ~ 0
+PWM_OUT_DRV_MOTOR_1
+Text GLabel 9900 4750 2    40   Input ~ 0
+PWM_OUT_DRV_MOTOR_2
+Text GLabel 9900 4650 2    40   Input ~ 0
+PWM_OUT_DRV_MOTOR_3
+Text GLabel 9900 4550 2    40   Input ~ 0
+PWM_OUT_WPN_MOTOR_1
+Text GLabel 9900 4450 2    40   Input ~ 0
+PWM_OUT_WPN_MOTOR_2
+Text GLabel 9900 4350 2    40   Input ~ 0
+PWM_OUT_WPN_MOTOR_3
+Text GLabel 8050 3350 0    40   Input ~ 0
+IN_RX_W1
+Text GLabel 8050 3450 0    40   Input ~ 0
+IN_RX_W2
+Text GLabel 8050 3550 0    40   Input ~ 0
+IN_RX_W3
+Text GLabel 8050 3650 0    40   Input ~ 0
+IN_RX_W4
+Text GLabel 8050 3950 0    40   Input ~ 0
+IN_RX_W5
+Text GLabel 8050 4050 0    40   Input ~ 0
+IN_RX_W6
+Text GLabel 8050 4150 0    40   Input ~ 0
+IN_RX_D1
+Text GLabel 8050 4250 0    40   Input ~ 0
+IN_RX_D2
+Text GLabel 8050 4350 0    40   Input ~ 0
+IN_RX_D3
+Text GLabel 8050 4450 0    40   Input ~ 0
+IN_RX_D4
+Text GLabel 8050 4550 0    40   Input ~ 0
+IN_RX_D5
+Text GLabel 8050 4650 0    40   Input ~ 0
+IN_RX_D6
+Text GLabel 9900 4150 2    40   Input ~ 0
+ESP_MBED_TX
+Text GLabel 9900 4250 2    40   Input ~ 0
+ESP_MBED_RX
+Text GLabel 9900 4050 2    40   Input ~ 0
+ESP_READY
+$Comp
+L ADAFRUIT_HUZZAH U1
+U 1 1 59D92604
+P 2300 3250
+F 0 "U1" H 2650 1950 60  0000 C CNN
+F 1 "ADAFRUIT_HUZZAH" H 2300 3250 60  0000 C CNN
+F 2 "mbed:ESP8266" H 2300 3250 60  0001 C CNN
+F 3 "" H 2300 3250 60  0001 C CNN
+	1    2300 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1400 3850 0    40   Input ~ 0
+ESP_READY
+Text GLabel 3250 3450 2    40   Input ~ 0
+ESP_MBED_TX
+Text GLabel 3250 3350 2    40   Input ~ 0
+ESP_MBED_RX
+$Comp
+L +5V #PWR03
+U 1 1 59D926FD
+P 950 4150
+F 0 "#PWR03" H 950 4000 50  0001 C CNN
+F 1 "+5V" H 950 4290 50  0000 C CNN
+F 2 "" H 950 4150 50  0001 C CNN
+F 3 "" H 950 4150 50  0001 C CNN
+	1    950  4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 59D92715
+P 1550 4400
+F 0 "#PWR04" H 1550 4150 50  0001 C CNN
+F 1 "GND" H 1550 4250 50  0000 C CNN
+F 2 "" H 1550 4400 50  0001 C CNN
+F 3 "" H 1550 4400 50  0001 C CNN
+	1    1550 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L bno055 U2
+U 1 1 59D928D7
+P 5750 3600
+F 0 "U2" H 5750 2900 60  0000 C CNN
+F 1 "bno055" H 5750 3600 60  0000 C CNN
+F 2 "mbed:BNO055" H 5750 3600 60  0001 C CNN
+F 3 "" H 5750 3600 60  0001 C CNN
+	1    5750 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 8050 3750 0    40   Input ~ 0
+BNO_MBED_SDA
+Text GLabel 8050 3850 0    40   Input ~ 0
+BNO_MBED_SCL
+$Comp
+L +5V #PWR05
+U 1 1 59D929D4
+P 4500 3700
+F 0 "#PWR05" H 4500 3550 50  0001 C CNN
+F 1 "+5V" H 4500 3840 50  0000 C CNN
+F 2 "" H 4500 3700 50  0001 C CNN
+F 3 "" H 4500 3700 50  0001 C CNN
+	1    4500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 59D929EE
+P 4500 3900
+F 0 "#PWR06" H 4500 3650 50  0001 C CNN
+F 1 "GND" H 4500 3750 50  0000 C CNN
+F 2 "" H 4500 3900 50  0001 C CNN
+F 3 "" H 4500 3900 50  0001 C CNN
+	1    4500 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 4000 0    40   Input ~ 0
+BNO_MBED_SDA
+Text GLabel 5150 4100 0    40   Input ~ 0
+BNO_MBED_SCL
+Text GLabel 1300 6800 3    40   Input ~ 0
+PWM_OUT_WPN_MOTOR_1
+Text GLabel 2100 6800 3    40   Input ~ 0
+PWM_OUT_WPN_MOTOR_2
+Text GLabel 2900 6800 3    40   Input ~ 0
+PWM_OUT_WPN_MOTOR_3
+$Comp
+L +5V #PWR07
+U 1 1 59D933B2
+P 600 6550
+F 0 "#PWR07" H 600 6400 50  0001 C CNN
+F 1 "+5V" H 600 6690 50  0000 C CNN
+F 2 "" H 600 6550 50  0001 C CNN
+F 3 "" H 600 6550 50  0001 C CNN
+	1    600  6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 59D933D2
+P 600 6600
+F 0 "#PWR08" H 600 6350 50  0001 C CNN
+F 1 "GND" H 600 6450 50  0000 C CNN
+F 2 "" H 600 6600 50  0001 C CNN
+F 3 "" H 600 6600 50  0001 C CNN
+	1    600  6600
+	1    0    0    -1  
+$EndComp
+Text GLabel 3950 6800 3    40   Input ~ 0
+PWM_OUT_DRV_MOTOR_1
+Text GLabel 4750 6800 3    40   Input ~ 0
+PWM_OUT_DRV_MOTOR_2
+Text GLabel 5550 6800 3    40   Input ~ 0
+PWM_OUT_DRV_MOTOR_3
+$Comp
+L +5V #PWR09
+U 1 1 59D939F5
+P 3250 6550
+F 0 "#PWR09" H 3250 6400 50  0001 C CNN
+F 1 "+5V" H 3250 6690 50  0000 C CNN
+F 2 "" H 3250 6550 50  0001 C CNN
+F 3 "" H 3250 6550 50  0001 C CNN
+	1    3250 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 59D939FB
+P 3250 6600
+F 0 "#PWR010" H 3250 6350 50  0001 C CNN
+F 1 "GND" H 3250 6450 50  0000 C CNN
+F 2 "" H 3250 6600 50  0001 C CNN
+F 3 "" H 3250 6600 50  0001 C CNN
+	1    3250 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_W1
+U 1 1 59D94FE0
+P 1250 5950
+F 0 "CON_W1" H 800 5750 60  0000 C CNN
+F 1 "Weapon Motor 1" H 1200 5900 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 1250 5950 60  0001 C CNN
+F 3 "" H 1250 5950 60  0001 C CNN
+	1    1250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_W2
+U 1 1 59D9523B
+P 2050 5950
+F 0 "CON_W2" H 1600 5750 60  0000 C CNN
+F 1 "Weapon Motor 1" H 2000 5900 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 2050 5950 60  0001 C CNN
+F 3 "" H 2050 5950 60  0001 C CNN
+	1    2050 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_W3
+U 1 1 59D952AB
+P 2850 5950
+F 0 "CON_W3" H 2400 5750 60  0000 C CNN
+F 1 "Weapon Motor 1" H 2800 5900 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 2850 5950 60  0001 C CNN
+F 3 "" H 2850 5950 60  0001 C CNN
+	1    2850 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_D1
+U 1 1 59D95305
+P 3900 5950
+F 0 "CON_D1" H 3450 5750 60  0000 C CNN
+F 1 "Drive Motor 1" H 3850 5900 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 3900 5950 60  0001 C CNN
+F 3 "" H 3900 5950 60  0001 C CNN
+	1    3900 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_D2
+U 1 1 59D953D1
+P 4700 5950
+F 0 "CON_D2" H 4250 5750 60  0000 C CNN
+F 1 "Drive Motor 2" H 4650 5900 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 4700 5950 60  0001 C CNN
+F 3 "" H 4700 5950 60  0001 C CNN
+	1    4700 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_D3
+U 1 1 59D95439
+P 5500 5950
+F 0 "CON_D3" H 5050 5750 60  0000 C CNN
+F 1 "Drive Motor 3" H 5450 5900 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 5500 5950 60  0001 C CNN
+F 3 "" H 5500 5950 60  0001 C CNN
+	1    5500 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_RX_D1
+U 1 1 59D9E995
+P 1550 650
+F 0 "CON_RX_D1" H 1000 450 60  0000 C CNN
+F 1 "Drive Chan 1" H 1500 600 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 1550 650 60  0001 C CNN
+F 3 "" H 1550 650 60  0001 C CNN
+	1    1550 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_RX_D2
+U 1 1 59D9EA1A
+P 2550 650
+F 0 "CON_RX_D2" H 2000 450 60  0000 C CNN
+F 1 "Drive Chan 2" H 2500 600 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 2550 650 60  0001 C CNN
+F 3 "" H 2550 650 60  0001 C CNN
+	1    2550 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_RX_D3
+U 1 1 59D9EB30
+P 3550 650
+F 0 "CON_RX_D3" H 3000 450 60  0000 C CNN
+F 1 "Drive Chan 3" H 3500 600 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 3550 650 60  0001 C CNN
+F 3 "" H 3550 650 60  0001 C CNN
+	1    3550 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_RX_D4
+U 1 1 59D9EBB4
+P 4550 650
+F 0 "CON_RX_D4" H 4000 450 60  0000 C CNN
+F 1 "Drive Chan 4" H 4500 600 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 4550 650 60  0001 C CNN
+F 3 "" H 4550 650 60  0001 C CNN
+	1    4550 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_RX_D5
+U 1 1 59D9EC34
+P 5550 650
+F 0 "CON_RX_D5" H 5000 450 60  0000 C CNN
+F 1 "Drive Chan 5" H 5500 600 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 5550 650 60  0001 C CNN
+F 3 "" H 5550 650 60  0001 C CNN
+	1    5550 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_RX_D6
+U 1 1 59D9ECFA
+P 6550 650
+F 0 "CON_RX_D6" H 6000 450 60  0000 C CNN
+F 1 "Drive Chan 6" H 6500 600 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 6550 650 60  0001 C CNN
+F 3 "" H 6550 650 60  0001 C CNN
+	1    6550 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 59D9F963
+P 1050 1400
+F 0 "#PWR011" H 1050 1150 50  0001 C CNN
+F 1 "GND" H 1050 1250 50  0000 C CNN
+F 2 "" H 1050 1400 50  0001 C CNN
+F 3 "" H 1050 1400 50  0001 C CNN
+	1    1050 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR012
+U 1 1 59D9F9D1
+P 1050 1300
+F 0 "#PWR012" H 1050 1150 50  0001 C CNN
+F 1 "+5V" H 1050 1440 50  0000 C CNN
+F 2 "" H 1050 1300 50  0001 C CNN
+F 3 "" H 1050 1300 50  0001 C CNN
+	1    1050 1300
+	1    0    0    -1  
+$EndComp
+Text GLabel 1600 1450 3    40   Input ~ 0
+IN_RX_D1
+Text GLabel 2600 1450 3    40   Input ~ 0
+IN_RX_D2
+Text GLabel 3600 1450 3    40   Input ~ 0
+IN_RX_D3
+Text GLabel 4600 1450 3    40   Input ~ 0
+IN_RX_D4
+Text GLabel 5600 1450 3    40   Input ~ 0
+IN_RX_D5
+Text GLabel 6600 1450 3    40   Input ~ 0
+IN_RX_D6
+Wire Wire Line
+	7850 2500 7850 3050
+Wire Wire Line
+	7850 3050 8200 3050
+Wire Wire Line
+	8050 3350 8200 3350
+Wire Wire Line
+	8050 3450 8200 3450
+Wire Wire Line
+	8050 3550 8200 3550
+Wire Wire Line
+	8050 3650 8200 3650
+Wire Wire Line
+	8050 3950 8200 3950
+Wire Wire Line
+	8050 4050 8200 4050
+Wire Wire Line
+	8050 4150 8200 4150
+Wire Wire Line
+	8050 4250 8200 4250
+Wire Wire Line
+	8050 4350 8200 4350
+Wire Wire Line
+	8050 4450 8200 4450
+Wire Wire Line
+	8050 4550 8200 4550
+Wire Wire Line
+	8050 4650 8200 4650
+Wire Wire Line
+	9900 4350 9750 4350
+Wire Wire Line
+	9750 4450 9900 4450
+Wire Wire Line
+	9900 4550 9750 4550
+Wire Wire Line
+	9750 4650 9900 4650
+Wire Wire Line
+	9750 4750 9900 4750
+Wire Wire Line
+	9750 4850 9900 4850
+Wire Wire Line
+	9750 4150 9900 4150
+Wire Wire Line
+	9750 4250 9900 4250
+Wire Wire Line
+	9750 4050 9900 4050
+Wire Wire Line
+	8200 2950 8050 2950
+Wire Wire Line
+	8050 2950 8050 2500
+Wire Wire Line
+	1550 3850 1400 3850
+Wire Wire Line
+	3250 3450 3100 3450
+Wire Wire Line
+	3250 3350 3100 3350
+Wire Wire Line
+	1550 4250 1550 4400
+Wire Wire Line
+	950  4150 1550 4150
+Wire Wire Line
+	8050 3750 8200 3750
+Wire Wire Line
+	8200 3850 8050 3850
+Wire Wire Line
+	5250 3700 4500 3700
+Wire Wire Line
+	4500 3900 5250 3900
+Wire Wire Line
+	5150 4000 5250 4000
+Wire Wire Line
+	5250 4100 5150 4100
+Wire Wire Line
+	600  6550 2800 6550
+Wire Wire Line
+	1200 6450 1200 6550
+Wire Wire Line
+	2000 6550 2000 6450
+Connection ~ 1200 6550
+Wire Wire Line
+	2800 6550 2800 6450
+Connection ~ 2000 6550
+Wire Wire Line
+	600  6600 2700 6600
+Wire Wire Line
+	1100 6600 1100 6450
+Wire Wire Line
+	2700 6600 2700 6450
+Connection ~ 1100 6600
+Wire Wire Line
+	1900 6450 1900 6600
+Connection ~ 1900 6600
+Wire Wire Line
+	1300 6450 1300 6800
+Wire Wire Line
+	2100 6450 2100 6800
+Wire Wire Line
+	2900 6450 2900 6800
+Wire Wire Line
+	3250 6550 5450 6550
+Wire Wire Line
+	3850 6450 3850 6550
+Wire Wire Line
+	4650 6550 4650 6450
+Connection ~ 3850 6550
+Wire Wire Line
+	5450 6550 5450 6450
+Connection ~ 4650 6550
+Wire Wire Line
+	3250 6600 5350 6600
+Wire Wire Line
+	3750 6600 3750 6450
+Wire Wire Line
+	5350 6600 5350 6450
+Connection ~ 3750 6600
+Wire Wire Line
+	4550 6450 4550 6600
+Connection ~ 4550 6600
+Wire Wire Line
+	3950 6450 3950 6800
+Wire Wire Line
+	4750 6450 4750 6800
+Wire Wire Line
+	5550 6450 5550 6800
+Wire Wire Line
+	1500 1150 1500 1300
+Wire Wire Line
+	1050 1300 6500 1300
+Wire Wire Line
+	2500 1300 2500 1150
+Connection ~ 1500 1300
+Wire Wire Line
+	3500 1300 3500 1150
+Connection ~ 2500 1300
+Wire Wire Line
+	4500 1300 4500 1150
+Connection ~ 3500 1300
+Wire Wire Line
+	1400 1150 1400 1400
+Wire Wire Line
+	1050 1400 6400 1400
+Wire Wire Line
+	2400 1400 2400 1150
+Connection ~ 1400 1400
+Wire Wire Line
+	3400 1400 3400 1150
+Connection ~ 2400 1400
+Wire Wire Line
+	4400 1400 4400 1150
+Connection ~ 3400 1400
+Wire Wire Line
+	3600 1150 3600 1450
+Wire Wire Line
+	4600 1150 4600 1450
+Wire Wire Line
+	5600 1150 5600 1450
+Wire Wire Line
+	6600 1150 6600 1450
+Wire Wire Line
+	6500 1300 6500 1150
+Connection ~ 4500 1300
+Wire Wire Line
+	5500 1150 5500 1300
+Connection ~ 5500 1300
+Wire Wire Line
+	5400 1400 5400 1150
+Connection ~ 4400 1400
+Wire Wire Line
+	6400 1400 6400 1150
+Connection ~ 5400 1400
+Wire Wire Line
+	2600 1150 2600 1450
+Wire Wire Line
+	1600 1150 1600 1450
+$Comp
+L Servo CON_RX_W1
+U 1 1 59DA0CF4
+P 1550 1850
+F 0 "CON_RX_W1" H 1000 1650 60  0000 C CNN
+F 1 "Weapon Chan 1" H 1500 1800 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 1550 1850 60  0001 C CNN
+F 3 "" H 1550 1850 60  0001 C CNN
+	1    1550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_RX_W2
+U 1 1 59DA0CFA
+P 2550 1850
+F 0 "CON_RX_W2" H 2000 1650 60  0000 C CNN
+F 1 "Weapon Chan 2" H 2500 1800 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 2550 1850 60  0001 C CNN
+F 3 "" H 2550 1850 60  0001 C CNN
+	1    2550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_RX_W3
+U 1 1 59DA0D00
+P 3550 1850
+F 0 "CON_RX_W3" H 3000 1650 60  0000 C CNN
+F 1 "Weapon Chan 3" H 3500 1800 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 3550 1850 60  0001 C CNN
+F 3 "" H 3550 1850 60  0001 C CNN
+	1    3550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_RX_W4
+U 1 1 59DA0D06
+P 4550 1850
+F 0 "CON_RX_W4" H 4000 1650 60  0000 C CNN
+F 1 "Weapon Chan 4" H 4500 1800 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 4550 1850 60  0001 C CNN
+F 3 "" H 4550 1850 60  0001 C CNN
+	1    4550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_RX_W5
+U 1 1 59DA0D0C
+P 5550 1850
+F 0 "CON_RX_W5" H 5000 1650 60  0000 C CNN
+F 1 "Weapon Chan 5" H 5500 1800 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 5550 1850 60  0001 C CNN
+F 3 "" H 5550 1850 60  0001 C CNN
+	1    5550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Servo CON_RX_W6
+U 1 1 59DA0D12
+P 6550 1850
+F 0 "CON_RX_W6" H 6000 1650 60  0000 C CNN
+F 1 "Weapon Chan 6" H 6500 1800 60  0000 C CNN
+F 2 "mbed:AngledServoCon" H 6550 1850 60  0001 C CNN
+F 3 "" H 6550 1850 60  0001 C CNN
+	1    6550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 59DA0D18
+P 1050 2600
+F 0 "#PWR013" H 1050 2350 50  0001 C CNN
+F 1 "GND" H 1050 2450 50  0000 C CNN
+F 2 "" H 1050 2600 50  0001 C CNN
+F 3 "" H 1050 2600 50  0001 C CNN
+	1    1050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR014
+U 1 1 59DA0D1E
+P 1050 2500
+F 0 "#PWR014" H 1050 2350 50  0001 C CNN
+F 1 "+5V" H 1050 2640 50  0000 C CNN
+F 2 "" H 1050 2500 50  0001 C CNN
+F 3 "" H 1050 2500 50  0001 C CNN
+	1    1050 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 1600 2650 3    40   Input ~ 0
+IN_RX_W1
+Text GLabel 2600 2650 3    40   Input ~ 0
+IN_RX_W2
+Text GLabel 3600 2650 3    40   Input ~ 0
+IN_RX_W3
+Text GLabel 4600 2650 3    40   Input ~ 0
+IN_RX_W4
+Text GLabel 5600 2650 3    40   Input ~ 0
+IN_RX_W5
+Text GLabel 6600 2650 3    40   Input ~ 0
+IN_RX_W6
+Wire Wire Line
+	1500 2350 1500 2500
+Wire Wire Line
+	1050 2500 6500 2500
+Wire Wire Line
+	2500 2500 2500 2350
+Connection ~ 1500 2500
+Wire Wire Line
+	3500 2500 3500 2350
+Connection ~ 2500 2500
+Wire Wire Line
+	4500 2500 4500 2350
+Connection ~ 3500 2500
+Wire Wire Line
+	1400 2350 1400 2600
+Wire Wire Line
+	1050 2600 6400 2600
+Wire Wire Line
+	2400 2600 2400 2350
+Connection ~ 1400 2600
+Wire Wire Line
+	3400 2600 3400 2350
+Connection ~ 2400 2600
+Wire Wire Line
+	4400 2600 4400 2350
+Connection ~ 3400 2600
+Wire Wire Line
+	3600 2350 3600 2650
+Wire Wire Line
+	4600 2350 4600 2650
+Wire Wire Line
+	5600 2350 5600 2650
+Wire Wire Line
+	6600 2350 6600 2650
+Wire Wire Line
+	6500 2500 6500 2350
+Connection ~ 4500 2500
+Wire Wire Line
+	5500 2350 5500 2500
+Connection ~ 5500 2500
+Wire Wire Line
+	5400 2600 5400 2350
+Connection ~ 4400 2600
+Wire Wire Line
+	6400 2600 6400 2350
+Connection ~ 5400 2600
+Wire Wire Line
+	2600 2350 2600 2650
+Wire Wire Line
+	1600 2350 1600 2650
+$EndSCHEMATC
