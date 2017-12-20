@@ -1,4 +1,4 @@
-update=Sun 08 Oct 2017 16:16:37 BST
+update=Tue 19 Dec 2017 13:31:59 GMT
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=lib/esp8266/ESP8266.pretty;lib/mbed
+LibDir=lib/esp8266/ESP8266.pretty;lib/mbed;/home/cameron/kicad_sources/library-repos
 [eeschema/libraries]
 LibName1=power
 LibName2=device
