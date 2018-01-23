@@ -1629,22 +1629,22 @@
     (pad 26 smd circle (at 11.43 33.02) (size 1.524 1.524) (layers F.Paste F.Mask)
       (net 45 "Net-(U1-Pad26)"))
     (pad "" thru_hole circle (at 15.24 -1.27) (size 3.048 3.048) (drill 2.032) (layers *.Cu *.Mask))
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_1x10_Pitch2.54mm.wrl
+    (model TriforceFightController.3dshapes/Pin_Header_Straight_1x10_Pitch2.54mm.wrl
       (at (xyz 0.6 -0.1 0.38))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model Pin_Headers.3dshapes/Pin_Header_Straight_1x10_Pitch2.54mm.wrl
+    (model TriforceFightController.3dshapes/Pin_Header_Straight_1x10_Pitch2.54mm.wrl
       (at (xyz -0.2 -0.1 0.38))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
-    (model /home/cameron/git/triforce-control-pcb/lib/mbed/PinSocket_1x10_P2.54mm_Vertical.wrl
+    (model TriforceFightController.3dshapes/PinSocket_1x10_P2.54mm_Vertical.wrl
       (at (xyz -0.2 -0.1 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model /home/cameron/git/triforce-control-pcb/lib/mbed/PinSocket_1x10_P2.54mm_Vertical.wrl
+    (model TriforceFightController.3dshapes/PinSocket_1x10_P2.54mm_Vertical.wrl
       (at (xyz 0.6 -0.1 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
