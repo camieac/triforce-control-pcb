@@ -1,4 +1,4 @@
-update=Tue 19 Dec 2017 13:31:59 GMT
+update=Tue 23 Jan 2018 20:42:49 GMT
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=lib/esp8266/ESP8266.pretty;lib/mbed;/home/cameron/kicad_sources/library-repos
@@ -63,19 +73,4 @@ LibName31=contrib
 LibName32=valves
 LibName33=nxp
 LibName34=rfcom
-LibName35=lib/esp8266/ESP8266
-LibName36=lib/mbed/mbed
-LibName37=lib/bosch/bosch
-LibName38=lib/mbed/esp8266
-LibName39=lib/mbed/bno055
-LibName40=lib/mbed/connectors
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName35=components/triforce-fight-controller
