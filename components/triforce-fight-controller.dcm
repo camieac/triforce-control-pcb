@@ -1,0 +1,45 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LPC1768
+D LPC1768
+K LPC1768
+F LPC1768
+$ENDCMP
+#
+$CMP ADAFRUIT_HUZZAH
+D ADAFRUIT_HUZZAH
+K ADAFRUIT_HUZZAH
+F ADAFRUIT_HUZZAH
+$ENDCMP
+#
+$CMP bno055
+D bno055
+K bno055
+F bno055
+$ENDCMP
+#
+$CMP 1x3ServoRightAngle2.54mmConnector
+D 1x3ServoRightAngle2.54mmConnector
+K 1x3ServoRightAngle2.54mmConnector
+F 1x3ServoRightAngle2.54mmConnector
+$ENDCMP
+#
+$CMP Servo
+D Servo
+K Servo
+F Servo
+$ENDCMP
+#
+$CMP ServoRightAngleConnector
+D ServoRightAngleConnector
+K ServoRightAngleConnector
+F ServoRightAngleConnector
+$ENDCMP
+#
+$CMP LPC1768
+D LPC1768
+K LPC1768
+F LPC1768
+$ENDCMP
+#
+#End Doc Library
