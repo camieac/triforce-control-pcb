@@ -1,4 +1,4 @@
-update=Tue 23 Jan 2018 20:10:08 GMT
+update=Thu 25 Jan 2018 21:13:47 GMT
 version=1
 last_client=eeschema
 [general]
@@ -29,7 +29,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=/usr/share/kicad/library
+LibDir=/usr/share/kicad/library;../components
 [eeschema/libraries]
 LibName1=power
 LibName2=device
