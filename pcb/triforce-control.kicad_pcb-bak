@@ -8,7 +8,7 @@
     (drawings 48)
     (tracks 304)
     (zones 0)
-    (modules 21)
+    (modules 20)
     (nets 71)
   )
 
@@ -312,7 +312,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (model "TriforceFightController.3dshapes/J Bezel Closed.wrl"
-      (at (xyz 0.8149999999999999 1.2 0.2))
+      (at (xyz 0.8149999999999999 1.2 0.3))
       (scale (xyz 1 1 1))
       (rotate (xyz -270 0 0))
     )

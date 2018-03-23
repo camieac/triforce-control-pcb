@@ -1,0 +1,445 @@
+EESchema Schematic File Version 2
+LIBS:triforce-fight-controller
+LIBS:fight-controller-main-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title "Triforce Fight Controller"
+Date "2018-01-22"
+Rev "A"
+Comp "Triforce"
+Comment1 "Author: Cameron A. Craig"
+Comment2 "Copyright Cameron A. Craig 2018"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 4000 4650 3    40   Input ~ 0
+PWM_OUT_WPN_MOTOR_1
+Text GLabel 4800 4650 3    40   Input ~ 0
+PWM_OUT_WPN_MOTOR_2
+Text GLabel 5600 4650 3    40   Input ~ 0
+PWM_OUT_WPN_MOTOR_3
+$Comp
+L +5V #PWR17
+U 1 1 5A91833A
+P 3300 4400
+F 0 "#PWR17" H 3300 4250 50  0001 C CNN
+F 1 "+5V" H 3300 4540 50  0000 C CNN
+F 2 "" H 3300 4400 50  0001 C CNN
+F 3 "" H 3300 4400 50  0001 C CNN
+	1    3300 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR18
+U 1 1 5A91833B
+P 3300 4450
+F 0 "#PWR18" H 3300 4200 50  0001 C CNN
+F 1 "GND" H 3300 4300 50  0000 C CNN
+F 2 "" H 3300 4450 50  0001 C CNN
+F 3 "" H 3300 4450 50  0001 C CNN
+	1    3300 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 6650 4650 3    40   Input ~ 0
+PWM_OUT_DRV_MOTOR_1
+Text GLabel 7450 4650 3    40   Input ~ 0
+PWM_OUT_DRV_MOTOR_2
+Text GLabel 8250 4650 3    40   Input ~ 0
+PWM_OUT_DRV_MOTOR_3
+$Comp
+L +5V #PWR21
+U 1 1 5A91833C
+P 5950 4400
+F 0 "#PWR21" H 5950 4250 50  0001 C CNN
+F 1 "+5V" H 5950 4540 50  0000 C CNN
+F 2 "" H 5950 4400 50  0001 C CNN
+F 3 "" H 5950 4400 50  0001 C CNN
+	1    5950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR22
+U 1 1 5A91833D
+P 5950 4450
+F 0 "#PWR22" H 5950 4200 50  0001 C CNN
+F 1 "GND" H 5950 4300 50  0000 C CNN
+F 2 "" H 5950 4450 50  0001 C CNN
+F 3 "" H 5950 4450 50  0001 C CNN
+	1    5950 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 6700 2050 0    40   Input ~ 0
+IN_RX_D1
+Text GLabel 6700 2150 0    40   Input ~ 0
+IN_RX_D2
+Text GLabel 6700 2250 0    40   Input ~ 0
+IN_RX_D3
+Text GLabel 6700 2350 0    40   Input ~ 0
+IN_RX_D4
+Text GLabel 6700 2450 0    40   Input ~ 0
+IN_RX_D5
+Text GLabel 6700 2550 0    40   Input ~ 0
+IN_RX_D6
+Text GLabel 7650 2050 0    40   Input ~ 0
+IN_RX_W1
+Text GLabel 7650 2150 0    40   Input ~ 0
+IN_RX_W2
+Text GLabel 7650 2250 0    40   Input ~ 0
+IN_RX_W3
+Text GLabel 7650 2350 0    40   Input ~ 0
+IN_RX_W4
+Text GLabel 7650 2450 0    40   Input ~ 0
+IN_RX_W5
+Text GLabel 7650 2550 0    40   Input ~ 0
+IN_RX_W6
+$Comp
+L SN65HVD232 U4
+U 1 1 5A91833E
+P 3300 2250
+F 0 "U4" H 3200 2650 50  0000 R CNN
+F 1 "SN65HVD232" H 3200 2550 50  0000 R CNN
+F 2 "Triforce_Fight_Controller:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3300 1750 50  0001 C CNN
+F 3 "" H 3200 2650 50  0001 C CNN
+	1    3300 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR16
+U 1 1 5A91833F
+P 3300 2750
+F 0 "#PWR16" H 3300 2500 50  0001 C CNN
+F 1 "GND" H 3300 2600 50  0000 C CNN
+F 2 "" H 3300 2750 50  0001 C CNN
+F 3 "" H 3300 2750 50  0001 C CNN
+	1    3300 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 2800 2150 0    39   Input ~ 0
+CAN_TXD
+Text GLabel 3300 1850 1    39   Input ~ 0
+MBED_3V3
+Text GLabel 2800 2250 0    39   Input ~ 0
+CAN_RXD
+$Comp
+L Conn_01x04 CON3
+U 1 1 5A918340
+P 4650 2250
+F 0 "CON3" H 4650 2450 50  0000 C CNN
+F 1 "Conn_01x04" H 4650 1950 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_S4B-PH-K_04x2.00mm_Angled" H 4650 2250 50  0001 C CNN
+F 3 "" H 4650 2250 50  0001 C CNN
+	1    4650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x08 CON7
+U 1 1 5A918341
+P 7000 2150
+F 0 "CON7" H 7000 2550 50  0000 C CNN
+F 1 "Conn_01x08" H 7000 1650 50  0000 C CNN
+F 2 "Connectors_JST:JST_SH_SM08B-SRSS-TB_08x1.00mm_Angled" H 7000 2150 50  0001 C CNN
+F 3 "" H 7000 2150 50  0001 C CNN
+	1    7000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x08 CON9
+U 1 1 5A918342
+P 7950 2150
+F 0 "CON9" H 7950 2550 50  0000 C CNN
+F 1 "Conn_01x08" H 7950 1650 50  0000 C CNN
+F 2 "Connectors_JST:JST_SH_SM08B-SRSS-TB_08x1.00mm_Angled" H 7950 2150 50  0001 C CNN
+F 3 "" H 7950 2150 50  0001 C CNN
+	1    7950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR19
+U 1 1 5A918343
+P 4400 2100
+F 0 "#PWR19" H 4400 1850 50  0001 C CNN
+F 1 "GND" H 4400 1950 50  0000 C CNN
+F 2 "" H 4400 2100 50  0001 C CNN
+F 3 "" H 4400 2100 50  0001 C CNN
+	1    4400 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR20
+U 1 1 5A918344
+P 4400 2500
+F 0 "#PWR20" H 4400 2350 50  0001 C CNN
+F 1 "+5V" H 4400 2640 50  0000 C CNN
+F 2 "" H 4400 2500 50  0001 C CNN
+F 3 "" H 4400 2500 50  0001 C CNN
+	1    4400 2500
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4400 2350 0    39   Input ~ 0
+CAN_H
+Text GLabel 4400 2250 0    39   Input ~ 0
+CAN_L
+Text GLabel 3750 2250 2    39   Input ~ 0
+CAN_H
+Text GLabel 3750 2350 2    39   Input ~ 0
+CAN_L
+$Comp
+L GND #PWR24
+U 1 1 5A918345
+P 6800 1750
+F 0 "#PWR24" H 6800 1500 50  0001 C CNN
+F 1 "GND" H 6800 1600 50  0000 C CNN
+F 2 "" H 6800 1750 50  0001 C CNN
+F 3 "" H 6800 1750 50  0001 C CNN
+	1    6800 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR26
+U 1 1 5A918346
+P 7750 1750
+F 0 "#PWR26" H 7750 1500 50  0001 C CNN
+F 1 "GND" H 7750 1600 50  0000 C CNN
+F 2 "" H 7750 1750 50  0001 C CNN
+F 3 "" H 7750 1750 50  0001 C CNN
+	1    7750 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR23
+U 1 1 5A918347
+P 6650 1900
+F 0 "#PWR23" H 6650 1750 50  0001 C CNN
+F 1 "+5V" H 6650 2040 50  0000 C CNN
+F 2 "" H 6650 1900 50  0001 C CNN
+F 3 "" H 6650 1900 50  0001 C CNN
+	1    6650 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR25
+U 1 1 5A918348
+P 7600 1900
+F 0 "#PWR25" H 7600 1750 50  0001 C CNN
+F 1 "+5V" H 7600 2040 50  0000 C CNN
+F 2 "" H 7600 1900 50  0001 C CNN
+F 3 "" H 7600 1900 50  0001 C CNN
+	1    7600 1900
+	0    -1   -1   0   
+$EndComp
+Text Notes 3450 1300 0    60   ~ 0
+CAN Transceiver
+Text Notes 6750 1550 0    60   ~ 0
+RF Receiver Connections
+$Comp
+L Conn_01x03 CON2
+U 1 1 5A918349
+P 3900 4000
+F 0 "CON2" H 3900 4200 50  0000 C CNN
+F 1 "CON_ESC_W1" H 3900 3800 50  0000 C CNN
+F 2 "mbed:Pin_Header_Angled_3x01_Pitch2.54mm" H 3900 4000 50  0001 C CNN
+F 3 "" H 3900 4000 50  0001 C CNN
+	1    3900 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x03 CON4
+U 1 1 5A91834A
+P 4700 4000
+F 0 "CON4" H 4700 4200 50  0000 C CNN
+F 1 "CON_ESC_W2" H 4700 3800 50  0000 C CNN
+F 2 "mbed:Pin_Header_Angled_3x01_Pitch2.54mm" H 4700 4000 50  0001 C CNN
+F 3 "" H 4700 4000 50  0001 C CNN
+	1    4700 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x03 CON5
+U 1 1 5A91834B
+P 5500 4000
+F 0 "CON5" H 5500 4200 50  0000 C CNN
+F 1 "CON_ESC_W3" H 5500 3800 50  0000 C CNN
+F 2 "mbed:Pin_Header_Angled_3x01_Pitch2.54mm" H 5500 4000 50  0001 C CNN
+F 3 "" H 5500 4000 50  0001 C CNN
+	1    5500 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x03 CON6
+U 1 1 5A91834C
+P 6550 4000
+F 0 "CON6" H 6550 4200 50  0000 C CNN
+F 1 "CON_ESC_D1" H 6550 3800 50  0000 C CNN
+F 2 "mbed:Pin_Header_Angled_3x01_Pitch2.54mm" H 6550 4000 50  0001 C CNN
+F 3 "" H 6550 4000 50  0001 C CNN
+	1    6550 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x03 CON8
+U 1 1 5A91834D
+P 7350 4000
+F 0 "CON8" H 7350 4200 50  0000 C CNN
+F 1 "CON_ESC_D2" H 7350 3800 50  0000 C CNN
+F 2 "mbed:Pin_Header_Angled_3x01_Pitch2.54mm" H 7350 4000 50  0001 C CNN
+F 3 "" H 7350 4000 50  0001 C CNN
+	1    7350 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x03 CON10
+U 1 1 5A91834E
+P 8150 4000
+F 0 "CON10" H 8150 4200 50  0000 C CNN
+F 1 "CON_ESC_D3" H 8150 3800 50  0000 C CNN
+F 2 "mbed:Pin_Header_Angled_3x01_Pitch2.54mm" H 8150 4000 50  0001 C CNN
+F 3 "" H 8150 4000 50  0001 C CNN
+	1    8150 4000
+	0    -1   -1   0   
+$EndComp
+Text Notes 5400 3650 0    60   ~ 0
+ESC Connections
+Wire Wire Line
+	3300 4400 5500 4400
+Wire Wire Line
+	3900 4200 3900 4400
+Wire Wire Line
+	4700 4200 4700 4400
+Connection ~ 3900 4400
+Wire Wire Line
+	5500 4400 5500 4200
+Connection ~ 4700 4400
+Wire Wire Line
+	3300 4450 5400 4450
+Wire Wire Line
+	3800 4200 3800 4450
+Wire Wire Line
+	5400 4450 5400 4200
+Connection ~ 3800 4450
+Wire Wire Line
+	4600 4200 4600 4450
+Connection ~ 4600 4450
+Wire Wire Line
+	4000 4200 4000 4650
+Wire Wire Line
+	4800 4200 4800 4650
+Wire Wire Line
+	5600 4200 5600 4650
+Wire Wire Line
+	5950 4400 8150 4400
+Wire Wire Line
+	6550 4200 6550 4400
+Wire Wire Line
+	7350 4200 7350 4400
+Connection ~ 6550 4400
+Wire Wire Line
+	8150 4400 8150 4200
+Connection ~ 7350 4400
+Wire Wire Line
+	5950 4450 8050 4450
+Wire Wire Line
+	6450 4200 6450 4450
+Wire Wire Line
+	8050 4450 8050 4200
+Connection ~ 6450 4450
+Wire Wire Line
+	7250 4200 7250 4450
+Connection ~ 7250 4450
+Wire Wire Line
+	6650 4200 6650 4650
+Wire Wire Line
+	7450 4200 7450 4650
+Wire Wire Line
+	8250 4200 8250 4650
+Wire Wire Line
+	3300 2650 3300 2750
+Wire Wire Line
+	3300 1850 3300 1950
+Wire Wire Line
+	2900 2150 2800 2150
+Wire Wire Line
+	2900 2250 2800 2250
+Wire Wire Line
+	4450 2150 4400 2150
+Wire Wire Line
+	4450 2450 4400 2450
+Wire Wire Line
+	4450 2250 4400 2250
+Wire Wire Line
+	4450 2350 4400 2350
+Wire Wire Line
+	4400 2150 4400 2100
+Wire Wire Line
+	4400 2450 4400 2500
+Wire Wire Line
+	3750 2350 3700 2350
+Wire Wire Line
+	3750 2250 3700 2250
+Wire Wire Line
+	6800 1750 6800 1850
+Wire Wire Line
+	7750 1750 7750 1850
+Wire Wire Line
+	6700 1950 6800 1950
+Wire Wire Line
+	7650 1950 7750 1950
+Wire Wire Line
+	6700 1950 6700 1900
+Wire Wire Line
+	6700 1900 6650 1900
+Wire Wire Line
+	7650 1950 7650 1900
+Wire Wire Line
+	7650 1900 7600 1900
+Wire Wire Line
+	7650 2050 7750 2050
+Wire Wire Line
+	7650 2150 7750 2150
+Wire Wire Line
+	7650 2250 7750 2250
+Wire Wire Line
+	7650 2350 7750 2350
+Wire Wire Line
+	7650 2450 7750 2450
+Wire Wire Line
+	7650 2550 7750 2550
+Wire Wire Line
+	6700 2050 6800 2050
+Wire Wire Line
+	6700 2150 6800 2150
+Wire Wire Line
+	6700 2250 6800 2250
+Wire Wire Line
+	6700 2350 6800 2350
+Wire Wire Line
+	6700 2450 6800 2450
+Wire Wire Line
+	6700 2550 6800 2550
+Wire Notes Line
+	2400 1350 2400 2950
+Wire Notes Line
+	2400 2950 4950 2950
+Wire Notes Line
+	4950 2950 4950 1350
+Wire Notes Line
+	4950 1350 2400 1350
+Wire Notes Line
+	6250 1600 6250 2800
+Wire Notes Line
+	6250 2800 8350 2800
+Wire Notes Line
+	8350 2800 8350 1600
+Wire Notes Line
+	8350 1600 6250 1600
+Wire Notes Line
+	3000 3700 3000 5500
+Wire Notes Line
+	3000 5500 8500 5500
+Wire Notes Line
+	8500 5500 8500 3700
+Wire Notes Line
+	8500 3700 3000 3700
+$EndSCHEMATC
